@@ -58,7 +58,11 @@ class GolgiCell(DbbsNeuronModel):
     section_types = {
         "soma": {
             "cable": {"Ra": 122, "cm": 1},
-            "ions": {"na": {"e": 60}, "k": {"e": -80}, "ca": {"e": 140.70872293}},
+            "ions": {
+                "na": {"e": 60}, 
+                "k": {"e": -80}, 
+                "ca": {"e": 140.70872293}
+            },
             "mechanisms": {
                 "Leak": {"e": -55, "gmax": 3e-05},
                 "Nav1_6": {"gbar": 0.14927733727426},
